@@ -1,0 +1,43 @@
+
+{
+  "validCheckout": {
+    "firstName": "Test",
+    "lastName": "Customer",
+    "postalCode": "500001"
+  },
+  "missingFieldScenarios": [
+    {
+      "name": "first name",
+      "firstName": "",
+      "lastName": "Customer",
+      "postalCode": "500001",
+      "expectedError": "Error: First Name is required"
+    },
+    {
+      "name": "last name",
+      "firstName": "Test",
+      "lastName": "",
+      "postalCode": "500001",
+      "expectedError": "Error: Last Name is required"
+    },
+    {
+      "name": "postal code",
+      "firstName": "Test",
+      "lastName": "Customer",
+      "postalCode": "",
+      "expectedError": "Error: Postal Code is required"
+    }
+  ],
+  "products": {
+    "firstProduct": "Sauce Labs Backpack",
+    "secondProduct": "Sauce Labs Bike Light",
+    "allProducts": [
+      "Sauce Labs Backpack",
+      "Sauce Labs Bike Light",
+      "Sauce Labs Bolt T-Shirt",
+      "Sauce Labs Fleece Jacket",
+      "Sauce Labs Onesie",
+      "Test.allTheThings() T-Shirt (Red)"
+    ]
+  }
+}
